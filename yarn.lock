@@ -1482,14 +1482,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/plugin-paginate-rest@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "@octokit/plugin-paginate-rest@npm:10.0.0"
+"@octokit/openapi-types@npm:^22.2.0":
+  version: 22.2.0
+  resolution: "@octokit/openapi-types@npm:22.2.0"
+  checksum: 10c0/a45bfc735611e836df0729f5922bbd5811d401052b972d1e3bc1278a2d2403e00f4552ce9d1f2793f77f167d212da559c5cb9f1b02c935114ad6d898779546ee
+  languageName: node
+  linkType: hard
+
+"@octokit/plugin-paginate-rest@npm:^11.0.0":
+  version: 11.3.5
+  resolution: "@octokit/plugin-paginate-rest@npm:11.3.5"
   dependencies:
-    "@octokit/types": "npm:^12.6.0"
+    "@octokit/types": "npm:^13.6.0"
   peerDependencies:
     "@octokit/core": ">=6"
-  checksum: 10c0/bdae24aca95edbfa8db4524aef4fd1bfd4ff9b1a4d788bce4674435e788715041c094c72c37039320b1cc06533c0bd562af5ab6293c4192505085eace855eff8
+  checksum: 10c0/c3a1f4a3ce95d9035e58aa9984ba51fd72aaed0505fef0656feb236c91a4de15b00752b9eabbdfced53826857a26c8e96d2db8d629ba0a476057935f2b318e50
   languageName: node
   linkType: hard
 
@@ -1607,6 +1614,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@octokit/types@npm:^13.6.0":
+  version: 13.6.0
+  resolution: "@octokit/types@npm:13.6.0"
+  dependencies:
+    "@octokit/openapi-types": "npm:^22.2.0"
+  checksum: 10c0/883315e7681b4dc8c5d47fb039a35ff0578da362872121c313c8a8d349a85f0793690b02f9f2be1068dcf7897f3b1dd0ed630b67e143d8a0f47e435497bca244
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -1671,20 +1687,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@semantic-release/commit-analyzer@npm:12.0.0"
+"@semantic-release/commit-analyzer@npm:^13.0.0-beta.1":
+  version: 13.0.0
+  resolution: "@semantic-release/commit-analyzer@npm:13.0.0"
   dependencies:
-    conventional-changelog-angular: "npm:^7.0.0"
-    conventional-commits-filter: "npm:^4.0.0"
-    conventional-commits-parser: "npm:^5.0.0"
+    conventional-changelog-angular: "npm:^8.0.0"
+    conventional-changelog-writer: "npm:^8.0.0"
+    conventional-commits-filter: "npm:^5.0.0"
+    conventional-commits-parser: "npm:^6.0.0"
     debug: "npm:^4.0.0"
     import-from-esm: "npm:^1.0.3"
     lodash-es: "npm:^4.17.21"
     micromatch: "npm:^4.0.2"
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 10c0/d9f76fd64ec679bdbb12b0a10d2493567403067d7fc9271571486f8edd53896b298eec2241a1a4427356309d9dea7e45097c8f1772177e38ebf671ff4fbe09a0
+  checksum: 10c0/4283eb3d636a4614a0f35d0be91a11d572bd6897233c7f95a04606a90ca07f470de627c3d8f63f2a0b467148f638996e70a984fa6fe978a26567c8364129956f
   languageName: node
   linkType: hard
 
@@ -1720,12 +1737,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^10.0.0":
-  version: 10.0.2
-  resolution: "@semantic-release/github@npm:10.0.2"
+"@semantic-release/github@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "@semantic-release/github@npm:11.0.0"
   dependencies:
     "@octokit/core": "npm:^6.0.0"
-    "@octokit/plugin-paginate-rest": "npm:^10.0.0"
+    "@octokit/plugin-paginate-rest": "npm:^11.0.0"
     "@octokit/plugin-retry": "npm:^7.0.0"
     "@octokit/plugin-throttling": "npm:^9.0.0"
     "@semantic-release/error": "npm:^4.0.0"
@@ -1741,8 +1758,8 @@ __metadata:
     p-filter: "npm:^4.0.0"
     url-join: "npm:^5.0.0"
   peerDependencies:
-    semantic-release: ">=20.1.0"
-  checksum: 10c0/103fc3656fc523526c0f3dfb268cf859848c379c21645a49a1626f03b9618fba2f6767b20fc4f8e21c57cda5e0788dd599d85cfea087c463d6bb5c529d0f8df6
+    semantic-release: ">=24.1.0"
+  checksum: 10c0/e64a6f0e8061ecdb7c382a0595c2a6597a511c16b2c291649a11a5cb8a47e1a4aad714bb41bf429aa3bcc6a4490a59b8393f591ee6ad0f2f282927fd358d0fc1
   languageName: node
   linkType: hard
 
@@ -1818,23 +1835,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "@semantic-release/release-notes-generator@npm:13.0.0"
+"@semantic-release/release-notes-generator@npm:^14.0.0-beta.1":
+  version: 14.0.1
+  resolution: "@semantic-release/release-notes-generator@npm:14.0.1"
   dependencies:
-    conventional-changelog-angular: "npm:^7.0.0"
-    conventional-changelog-writer: "npm:^7.0.0"
-    conventional-commits-filter: "npm:^4.0.0"
-    conventional-commits-parser: "npm:^5.0.0"
+    conventional-changelog-angular: "npm:^8.0.0"
+    conventional-changelog-writer: "npm:^8.0.0"
+    conventional-commits-filter: "npm:^5.0.0"
+    conventional-commits-parser: "npm:^6.0.0"
     debug: "npm:^4.0.0"
     get-stream: "npm:^7.0.0"
     import-from-esm: "npm:^1.0.3"
     into-stream: "npm:^7.0.0"
     lodash-es: "npm:^4.17.21"
-    read-pkg-up: "npm:^11.0.0"
+    read-package-up: "npm:^11.0.0"
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 10c0/46dbc2d59e11d1d4e9b75b7d07f955f74ef36e6f240456141f578ac8626c0bb731c04231f1ad4223d140b9734e5af0d477011c501475849eb24ac0bbdb95c829
+  checksum: 10c0/eaa78069ff1cdfb8f2ff1472d6f4ab6b8faece0c92788ed79c47b54bd3c1a26b48d6e4e5a1104c17eb406cce754095b0d68abdc650d239fdb7e9742a0513cd6b
   languageName: node
   linkType: hard
 
@@ -2132,7 +2149,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/semver@npm:^7.3.12":
+"@types/semver@npm:^7.3.12, @types/semver@npm:^7.5.5":
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
   checksum: 10c0/8663ff927234d1c5fcc04b33062cb2b9fcfbe0f5f351ed26c4d1e1581657deebd506b41ff7fdf89e787e3d33ce05854bc01686379b89e9c49b564c4cfa988efa
@@ -3431,6 +3448,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"conventional-changelog-angular@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "conventional-changelog-angular@npm:8.0.0"
+  dependencies:
+    compare-func: "npm:^2.0.0"
+  checksum: 10c0/743faceab876bb9b9656f2389830d0ccb7c5caf02a629cb495d75c65c43414274728d7059b716d0c7d66fd663f8b978f25d44657148b8bc64ece12952cbfd886
+  languageName: node
+  linkType: hard
+
 "conventional-changelog-conventionalcommits@npm:^7.0.2":
   version: 7.0.2
   resolution: "conventional-changelog-conventionalcommits@npm:7.0.2"
@@ -3440,26 +3466,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-writer@npm:^7.0.0":
-  version: 7.0.1
-  resolution: "conventional-changelog-writer@npm:7.0.1"
+"conventional-changelog-writer@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "conventional-changelog-writer@npm:8.0.0"
   dependencies:
-    conventional-commits-filter: "npm:^4.0.0"
+    "@types/semver": "npm:^7.5.5"
+    conventional-commits-filter: "npm:^5.0.0"
     handlebars: "npm:^4.7.7"
-    json-stringify-safe: "npm:^5.0.1"
-    meow: "npm:^12.0.1"
+    meow: "npm:^13.0.0"
     semver: "npm:^7.5.2"
-    split2: "npm:^4.0.0"
   bin:
-    conventional-changelog-writer: cli.mjs
-  checksum: 10c0/ec51708c33860777f2b85f1df588aed918cab08919146cdfac8f271e31c0caee22c5c50df78e4ce358022e58f65c8de77fd6a5fb529f4bb5ba27c2d1e072750f
+    conventional-changelog-writer: dist/cli/index.js
+  checksum: 10c0/fd4afe58c5b4638f38ae4cea5f38ead73583c4d1a792b2885d576ac5710644d5f6baaf52cc40641465d9ba2b2490ee494fe325b5cb5b849c9001f6c3875c5656
   languageName: node
   linkType: hard
 
-"conventional-commits-filter@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "conventional-commits-filter@npm:4.0.0"
-  checksum: 10c0/b26ea11ebb38218cb3cbbaf7d68b0f7c3b0eb7ad69afe9c9431d91e784acbebaeda7a095127ae5a7f8b75087d62b44e8e69d63426ff02b49f7dd504755934247
+"conventional-commits-filter@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "conventional-commits-filter@npm:5.0.0"
+  checksum: 10c0/678900d6c589bbe1739929071ea0ca89c872b9f3cc6974994726eb7a197ca04243e9ea65cae39a55e41fdc20f27fdfc43060588750d828e0efab41f309a42934
   languageName: node
   linkType: hard
 
@@ -3474,6 +3499,17 @@ __metadata:
   bin:
     conventional-commits-parser: cli.mjs
   checksum: 10c0/c9e542f4884119a96a6bf3311ff62cdee55762d8547f4c745ae3ebdc50afe4ba7691e165e34827d5cf63283cbd93ab69917afd7922423075b123d5d9a7a82ed2
+  languageName: node
+  linkType: hard
+
+"conventional-commits-parser@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "conventional-commits-parser@npm:6.0.0"
+  dependencies:
+    meow: "npm:^13.0.0"
+  bin:
+    conventional-commits-parser: dist/cli/index.js
+  checksum: 10c0/9482e0819709b703fc826398bee09da7ac244f0361257a32fc280b14fb5be5636859391eadbe40ba3863c913f37b3c20c0626dea22f0202e70ee1ee65f75b1d9
   languageName: node
   linkType: hard
 
@@ -5349,6 +5385,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hosted-git-info@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "hosted-git-info@npm:8.0.0"
+  dependencies:
+    lru-cache: "npm:^10.0.1"
+  checksum: 10c0/3eb932a99e8a3c7f3a4513a5a61b81d0789741abf41ebb2d9679644e4b4c730c68e1925fbaeae2c6b35eb0bab57a59027b89c21ab588981c8b0989c454adde46
+  languageName: node
+  linkType: hard
+
 "html-escaper@npm:^2.0.0":
   version: 2.0.2
   resolution: "html-escaper@npm:2.0.2"
@@ -6794,13 +6839,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-stringify-safe@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "json-stringify-safe@npm:5.0.1"
-  checksum: 10c0/7dbf35cd0411d1d648dceb6d59ce5857ec939e52e4afc37601aa3da611f0987d5cee5b38d58329ceddf3ed48bd7215229c8d52059ab01f2444a338bf24ed0f37
-  languageName: node
-  linkType: hard
-
 "json5@npm:^1.0.2":
   version: 1.0.2
   resolution: "json5@npm:1.0.2"
@@ -7433,6 +7471,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"meow@npm:^13.0.0":
+  version: 13.2.0
+  resolution: "meow@npm:13.2.0"
+  checksum: 10c0/d5b339ae314715bcd0b619dd2f8a266891928e21526b4800d49b4fba1cc3fff7e2c1ff5edd3344149fac841bc2306157f858e8c4d5eaee4d52ce52ad925664ce
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -7788,7 +7833,7 @@ __metadata:
     js-yaml: "npm:^4.1.0"
     lint-staged: "npm:^15.2.7"
     rimraf: "npm:^5.0.8"
-    semantic-release: "npm:^23.1.1"
+    semantic-release: "npm:^24.1.2"
     ts-jest: "npm:^29.1.5"
     ts-node: "npm:^10.9.2"
     typedoc: "npm:^0.26.3"
@@ -8988,17 +9033,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"read-pkg-up@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "read-pkg-up@npm:11.0.0"
-  dependencies:
-    find-up-simple: "npm:^1.0.0"
-    read-pkg: "npm:^9.0.0"
-    type-fest: "npm:^4.6.0"
-  checksum: 10c0/9dfe7b1088d22804e275c235e21d64acdfb81edb73373c9ef2707aae2db8309fd35f6de90f569f0159411c25972c5a321ae6cb6a54ec01e449ce9df0a0b2397a
-  languageName: node
-  linkType: hard
-
 "read-pkg-up@npm:^7.0.1":
   version: 7.0.1
   resolution: "read-pkg-up@npm:7.0.1"
@@ -9345,15 +9379,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:^23.1.1":
-  version: 23.1.1
-  resolution: "semantic-release@npm:23.1.1"
+"semantic-release@npm:^24.1.2":
+  version: 24.1.2
+  resolution: "semantic-release@npm:24.1.2"
   dependencies:
-    "@semantic-release/commit-analyzer": "npm:^12.0.0"
+    "@semantic-release/commit-analyzer": "npm:^13.0.0-beta.1"
     "@semantic-release/error": "npm:^4.0.0"
-    "@semantic-release/github": "npm:^10.0.0"
+    "@semantic-release/github": "npm:^11.0.0"
     "@semantic-release/npm": "npm:^12.0.0"
-    "@semantic-release/release-notes-generator": "npm:^13.0.0"
+    "@semantic-release/release-notes-generator": "npm:^14.0.0-beta.1"
     aggregate-error: "npm:^5.0.0"
     cosmiconfig: "npm:^9.0.0"
     debug: "npm:^4.0.0"
@@ -9364,7 +9398,7 @@ __metadata:
     get-stream: "npm:^6.0.0"
     git-log-parser: "npm:^1.2.0"
     hook-std: "npm:^3.0.0"
-    hosted-git-info: "npm:^7.0.0"
+    hosted-git-info: "npm:^8.0.0"
     import-from-esm: "npm:^1.3.1"
     lodash-es: "npm:^4.17.21"
     marked: "npm:^12.0.0"
@@ -9380,7 +9414,7 @@ __metadata:
     yargs: "npm:^17.5.1"
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: 10c0/c54fb43917299737803ca89fd5c692e08c630ad8765617b30ac41fb21173db67ce4bc617811b29702d27badd5075d984fcc8bdf058c3b3ce81732016bb07f9ee
+  checksum: 10c0/ff277e3fab5368f699e43132c25a198d54e5101e8c850705d856fb2353dc43d41bc56b2b78f5add8811ab59025880a424382e1859262fc017d9f88fdd9ca9a75
   languageName: node
   linkType: hard
 
